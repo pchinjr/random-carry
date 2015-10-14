@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="main.css">
+    
+      <title>Random Carry</title>
+    </head>
+    
+    <body>
+        <div class="jumbotron text-center"> 
+        <h1>Randomize Your Carry</h1>
+        <p>Overwhelmed by choices? Not sure what to wear next? Use this handy tool to help!</p>
+        <p>Data provided by <br> <a href="http://www.babywearinghamptonroads.org/">Babywearing Hampton Roads</a></p>
+        </div>
+        
+        <div class="container">
+        <form name="form" id="form" onsubmit="return false" class="form-horizontal">
+            <div class="form-group">
+                <label for="baseSize" class="col-sm-5 control-label">Base Size</label>
+                <div class="col-sm-3">
+                    <input type="text" name="base" id="baseSize" class="form-control" placeholder="What is your base size?" />
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label for="wrapSize" class="col-sm-5 control-label">Wrap Size</label>
+                <div class="col-sm-3">
+                    <input type="text" name="wrap" id="wrapSize" class="form-control" placeholder="What is your wrap size?" />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="orientation" class="col-sm-5 control-label">And then you get your baby...</label>
+                <div class="col-sm-3">
+                <select class="form-control" id="orientation">
+                    <option>Front</option>
+                    <option>Back</option>
+                    <option>Hip</option>
+                </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-sm-offset-5 col-sm-3">
+                    <button type="submit" class="btn btn-primary" onClick="generate()">Randomize It!</button>
+                </div>
+            </div> 
+        </form>
+        </div>
+        
+        <div class="content container text-center">
+        </div>
+        
+    <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="carries.js"></script>    
+    <script src="taffy_fix.js"></script>
+    <script src="main.js"></script>
+    </body>
+</html>

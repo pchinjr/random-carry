@@ -14,10 +14,10 @@ var generate = function() {
     //run logic
     if (result2 > 0) {
         var randCarry = result1[Math.floor(Math.random() * result1.length)];    
-        $( ".content" ).append( "<h1> You should try a " + randCarry.name + "<h1>" );
+        $( ".content" ).append( "<h2> You should try a " + randCarry.name + "</h2>" );
         $( ".content" ).append( "<h2>" + "<a href=" + randCarry.url +">" + "Check out this tutorial" + "<a/>" + "<h2>");
     } else {
-        $( ".content" ).append("<h1> Sorry, No Matches Found </h1>");
+        $( ".content" ).append("<h2> Sorry, No Matches Found </h2>");
     }
 }
     
